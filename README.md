@@ -1,7 +1,9 @@
-# yo-app
+# Form App - Directive 
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+Interactive form builder uses a directive to dynamically generate elements based on the user selection. 
+Currently the HTML strings are hard-coded in the directive but they can be interactively, 
+loaded from a folder.
+LocalStorage is used to save the user selection.
 
 ## Build & development
 
