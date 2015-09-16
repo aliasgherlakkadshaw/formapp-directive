@@ -1,0 +1,21 @@
+<div class="container main-container">
+  <div class="row filter-row">
+    <div class="col-md-12">
+      <label>Filter by name:</label>
+      <input type= "text" placeholder= "Search for fields" class= "form-control" ng-model= "query">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+
+      <form role="form">
+        <div class="checkbox" ng-repeat= "field in fields | filter: query">
+          <input type="checkbox" class= "checkbox" ng-model= "field[field.label]" ng-change= "check(field, $index)">
+          <label>
+              {{field.label}}
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
